@@ -2,7 +2,7 @@
 using FinanceManagement.MyExceptions;
 using FinanceManagement.Utility;
 using System.Data.SqlClient;
-
+using System.Net.Mail;
 namespace FinanceManagement.Dao
 {
     public class UserRepositoryImpl : IUserRepository
@@ -10,6 +10,13 @@ namespace FinanceManagement.Dao
         
         public bool Register(User user)
         {
+            if (!IsValidEmail(user.Email))
+            {
+                Console.WriteLine("Invalid email format. Please enter a valid email");
+                return false;
+            }
+
+
             // TODO: Logic to insert user into database
             using (SqlConnection sqlConnection = DBConnection.GetConnectionObject())
             using (SqlCommand cmd = new SqlCommand())
@@ -46,6 +53,14 @@ namespace FinanceManagement.Dao
             }
             return false;
         }
+        private bool IsValidEmail(string email)
+        {
+            return !string.IsNullOrWhiteSpace(email) &&
+                   System.Text.RegularExpressions.Regex.IsMatch(email,
+                   @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+        }
+
+
 
         public User Login(string username, string password)
         {

@@ -141,7 +141,7 @@ namespace FinanceManagement.MainModule
                             int delExpId = Convert.ToInt32(Console.ReadLine());
 
                             bool deleted = financeRepo.DeleteExpense(delExpId); //  only 1 parameter
-                            Console.WriteLine(deleted ? "Expense deleted." : "Expense not found or not yours");
+                            Console.WriteLine(deleted ? $"Expense with id {delExpId} deleted" : $"Expense for id {delExpId} is not found ");
                             break;
 
                         case 4:
