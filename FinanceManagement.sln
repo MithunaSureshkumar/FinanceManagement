@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceManagement", "FinanceManagement.csproj", "{589EF708-72BA-4991-BCAB-C9A92570B015}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceManagement.test", "..\FinanceManagement.test\FinanceManagement.test.csproj", "{E368EEA2-8B72-46FF-9672-04A24AF2DC17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceApp.test", "..\FinanceApp.test\FinanceApp.test.csproj", "{CA9A5097-B6FD-4110-8725-CE4AAA86B44E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{589EF708-72BA-4991-BCAB-C9A92570B015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{589EF708-72BA-4991-BCAB-C9A92570B015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{589EF708-72BA-4991-BCAB-C9A92570B015}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E368EEA2-8B72-46FF-9672-04A24AF2DC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E368EEA2-8B72-46FF-9672-04A24AF2DC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E368EEA2-8B72-46FF-9672-04A24AF2DC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E368EEA2-8B72-46FF-9672-04A24AF2DC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9A5097-B6FD-4110-8725-CE4AAA86B44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9A5097-B6FD-4110-8725-CE4AAA86B44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9A5097-B6FD-4110-8725-CE4AAA86B44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9A5097-B6FD-4110-8725-CE4AAA86B44E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
